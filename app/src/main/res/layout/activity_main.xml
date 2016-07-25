@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="examples.lcd.sqlitepractice.MainActivity">
+
+    <Button
+        android:id="@+id/newReaderWithGlobalDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db reader with global database"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/newReaderWithNewDatabase"
+        android:layout_below="@id/newReaderWithGlobalDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db reader with new sqliteopenhelper"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/newWriterWithGlobalDatabase"
+        android:layout_below="@id/newReaderWithNewDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db writer with global database"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/newWriterWithNewDatabase"
+        android:layout_below="@id/newWriterWithGlobalDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db writer with new sqliteopenhelper"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/newWriterWithGlobalDatabaseAndTransaction"
+        android:layout_below="@id/newWriterWithNewDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db writer with global database and transaction"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/newWriterWithNewDatabaseAndTransaction"
+        android:layout_below="@id/newWriterWithGlobalDatabaseAndTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new db writer with new sqliteopenhelper and transaction"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/terminateReaders"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terminate readers"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+    <Button
+        android:id="@+id/terminateWriters"
+        android:layout_toRightOf="@id/terminateReaders"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terminate writers"
+        android:textAllCaps="false"
+        android:onClick="onClickAction"
+        />
+
+</RelativeLayout>
